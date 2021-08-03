@@ -1,0 +1,43 @@
+{
+    "background": {
+        "scripts": [
+            "bg.js"
+        ]
+    },
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "\u003Call_urls>"
+            ],
+            "css": [
+                "inject/inject.css"
+            ],
+            "js": [
+                "inject/inject.js"
+            ]
+        }
+    ],
+    "content_security_policy": "script-src 'self' https://www.google-analytics.com https://*.googleapis.com https://www.googletagmanager.com; object-src 'self'",
+    "default_locale": "en",
+    "description": "没啥可说 牛逼完事",
+    "icons": {
+        "128": "icons/icon-128.png",
+        "48": "icons/icon-48.png",
+        "16": "icons/icon-16.png"
+    },
+    "web_accessible_resources": [
+        "icons/*"
+    ],
+    "manifest_version": 2,
+    "name": "Siam划词翻译官",
+    "permissions": [
+        "\u003Call_urls>",
+        "webRequest",
+        "webRequestBlocking",
+        "storage"
+    ],
+    "version": "2.7.15"
+}

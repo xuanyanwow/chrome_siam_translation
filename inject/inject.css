@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap');
+
+#translator-container, #translator-container * {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    line-height: 1;
+    text-align: left;
+}
+
+#translator-container header {
+    width: auto;
+    min-height: 50px;
+    max-height: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(0, 3, 63, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    padding: 0px 16px;
+    flex: 1;
+}
+
+#translator-container {
+    width: 25%;
+    min-height: 320px;
+    display: none;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(93, 67, 119, 0.25);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999999999999999;
+    flex-flow: column wrap;
+    /* padding: 25px; */
+}
+
+#translator-icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    cursor: pointer;
+    z-index: 999999999999999999;
+}
+
+#translator-container span {
+    font-family: "Noto Sans" !important;
+    font-weight: 400 !important;
+    border: none !important;
+    color: #44446A !important;
+    font-size: 16px !important;
+}
+
+#rapid-copy {
+    cursor: pointer;
+}
+
+#rapid-text-wrapper {
+    padding: 20px;
+    flex: 2;
+}
+
+#translator-container footer {
+    width: auto;
+    background: #0DD0C5;
+    box-shadow: 0px -2px 6px rgba(0, 3, 63, 0.15);
+    min-height: 50px;
+    max-height: 50px;
+    padding: 0px 16px;
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    flex: 1;
+}
+
+#translator-container #rapid-first-language, #translator-container #rapid-second-language {
+    font-family: "Noto Sans" !important;
+    color: #44446A !important;
+    font-weight: bold !important;
+    font-size: 16px !important;
+}
+
+#translator-container #rapid-second-language {
+    color: #44446A !important;
+}
+
+#translator-container #rapid-arrow-icon {
+    margin-left: 4px;
+    margin-right: 4px;
+}
